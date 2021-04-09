@@ -6,9 +6,6 @@ const {
   deleteFriend,
 } = require("../controllers/friends");
 
-router.route("/").get(async (req, res, next) => {
-  res.status(200).json({ message: "ok", data: "Hello" });
-});
 router.route("/addfriend").post(addFriend);
 
 router.route("/getfriends").get(getFriends);
